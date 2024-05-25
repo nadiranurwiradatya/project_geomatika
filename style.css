@@ -1,10 +1,11 @@
 /* style.css */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
+* {
+  font-family: "Poppins", sans-serif;
+}
 .navbar {
   background-color: #333;
   overflow: hidden;
@@ -49,8 +50,8 @@ body {
 }
 
 .swiper-container {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   margin: 50px auto;
   overflow: hidden;
 }

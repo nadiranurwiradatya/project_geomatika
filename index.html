@@ -1,4 +1,65 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="picture-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/indeximg/G/IMG_2237.jpg" alt="Ruangan Sejarah" />
+            <div class="description">Ruang Bahasa</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/indeximg/G/IMG_2239.jpg" alt="Ruangan Transit" />
+            <div class="description">Ruang Transit</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/indeximg/G/IMG_2242.jpg" alt="Ruangan " />
+            <div class="description">Ruang Layanan Kemahasiswaan</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/indeximg/G/layanan mahasiswa.jpg" alt="Ruangan " />
+            <div class="description">Ruang Layanan Kemahasiswaan</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/indeximg/G/sekretariat senat.jpg" alt="Ruangan " />
+            <div class="description">Ruangan Sekretariat Senat</div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper-container", {
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="utf-8">
@@ -10,8 +71,7 @@
     <body>
            <nav class="navbar">
       <ul class="navbar-menu">
-        <li class="navbar-item-active"><a href="index.html">Gedung Rektorat</a></li>
-        <li class="navbar-item"><a href="lantaig.html">Lantai G</a></li>
+        <li class="navbar-item-active"><a href="index.html">Lantai G</a></li>
         <li class="navbar-item"><a href="lantai1.html">Lantai 1</a></li>
         <li class="navbar-item"><a href="lantai2.html">Lantai 2</a></li>
         <li class="navbar-item"><a href="lantai3.html">Lantai 3</a></li>
